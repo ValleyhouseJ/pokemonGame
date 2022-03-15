@@ -26,6 +26,48 @@ const updatePage = (userInput) => {
     ourTerminal.appendChild();
 }
 
+window.addEventListener("keydown", function(e) {
+    switch (e.key) {
+        case "a":
+            userInput.push(e.key);
+            break;
+
+        case "b":
+            userInput.push(e.key);
+            break;
+
+        case "c":
+            userInput.push(e.key);
+            break;
+
+        case "d":
+            userInput.push(e.key);
+            break;
+
+        case "e":
+            userInput.push(e.key);
+            break;
+
+        case "f":
+            userInput.push(e.key);
+            break;
+
+        case "g":
+            userInput.push(e.key);
+            break;
+
+        case "h":
+            userInput.push(e.key);
+            break;
+
+        case "Enter":
+            break;
+    
+        default:
+            break;
+    }
+});
+
 const whatToDo = (userInput) => {
     userInput = userInput.toLowerCase();
     switch (userInput) {
@@ -48,7 +90,6 @@ const whatToDo = (userInput) => {
             });
             updatePage(`${pokeballCount} pokeballs`);
             updatePage(`${berryCount} berries`);
-            console.log("You typed in storage");
             break;
 
         case "right":
